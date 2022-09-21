@@ -1,35 +1,29 @@
 
 package Homeworks.Lessons11;
-import java.util.*;
+
 public class Homework19 {
 
+    public static int[] addElement(int[] srcArray, int elementToAdd) {
+        int[] destArray = new int[srcArray.length + 1];
+
+        for (int i = 0; i < srcArray.length; i++) {
+            destArray[i] = srcArray[i];
+        }
+
+        destArray[destArray.length - 1] = elementToAdd;
+        return destArray;
+    }
 
     public static void main(String args[]) {
 
-        ArrayList al = new ArrayList();
-        System.out.println("First size: " + al.size());
+        int[] a = {1, 2, 3, 4, 5, 6};
+        int addNumber = 7;
+        int[] b = addElement(a,addNumber);
+        for (int i = 0; i < b.length; i++) {
 
-        // Добавляем элементы в ArrayList
-        al.add("1");
-        al.add("2");
-        al.add("3");
-        al.add("4");
-        al.add("5");
-        al.add("6");
-        al.add(1, "A2");
-        System.out.println("LAST al AFTER: " + al.size());
+            System.out.print(b[i]);
+        }
 
-        // Выводим на экран элементы ArrayList
-        System.out.println("MAIN al: " + al);
-
-        display("Tom", 34);
-        display("Bob", 28);
-        display("Sam", 23);
-    }
-    static void display(String name, int age){
-
-        System.out.println(name);
-        System.out.println(age);
     }
 }
 
