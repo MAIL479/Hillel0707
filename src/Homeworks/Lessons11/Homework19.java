@@ -18,7 +18,7 @@ public class Homework19 {
 
         int[] a = {1, 2, 3, 4, 5, 6};
         int addNumber = 7;
-        int[] b = addElement(a,addNumber);
+        int[] b = addElement(a, addNumber);
         for (int i = 0; i < b.length; i++) {
 
             System.out.print(b[i]);
