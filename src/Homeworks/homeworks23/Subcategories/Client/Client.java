@@ -24,10 +24,9 @@ public class Client {
 
     public void getMoney(int summa) {
         if (typeClient.equals("IE")) {
-            if (summ < 1000){
+            if (summ < 1000) {
                 summ -= summa * 1.01;
-            }
-            else if  (summ >= 1000){
+            } else if (summ >= 1000) {
                 summ -= summa * 1.005;
             }
         } else if (typeClient.equals("LFE")) {
